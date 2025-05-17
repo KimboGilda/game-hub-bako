@@ -1,0 +1,59 @@
+.container-main {
+    width: 100vw;
+    height: 100vh;
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    gap: 100px;
+}
+
+.navbar-logo {
+    width: 40px;
+    margin-left: 10px;
+}
+
+.panels {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.side-panel {
+    width: 40%;
+    background-color: lightgray;
+}
+
+.main-panel {
+    background-color: aqua;
+    width: 60%;
+}
+
+
+.light-mode {
+    background-color: whitesmoke;
+    color:black;
+}
+
+.dark-mode {
+    background-color: #262626;
+    color: white;
+}
+
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+    .panels {
+        flex-direction: column;
+    }
+
+    .side-panel,
+    .main-panel {
+        flex: none;
+        width: 100%;
+    }
+}
